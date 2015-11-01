@@ -63,3 +63,8 @@ SSH-keys used in rundeck. If nothing provided a new one is generated during cont
 ### /var/log/rundeck
 
 Logfiles of rundeck.
+
+## License
+
+By using this image you agree to the oracle java license that would be displayed during installation.
+
