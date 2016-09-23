@@ -26,6 +26,12 @@ This dockerfile describes a basic installation of rundeck with external database
 		--name rundeck -h rundeck \
 		 mbopm/rundeck
 
+## WebUI Login credentials
+
+**user**: `admin`
+
+**password**: `admin`
+
 ## Environment variables
 
 ### SERVER_URL
