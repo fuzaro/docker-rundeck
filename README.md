@@ -16,13 +16,13 @@ This dockerfile describes a basic installation of rundeck with external database
 		-v /etc/timezone:/etc/timezone:ro \
 		-e POSTGRES_USER=rundeck \
 		-e POSTGRES_PASSWORD=rundeck \
-		--name rundeck_db -h rundeck_db \
+		--name rundeckdb -h rundeckdb \
 		 postgres:9.4.5
 
 	# start rundeck container and bind it to local ip - rely on default env variables
 	docker run --rm -ti \
 		-p 127.0.0.1:4440:4440 \
-		--link rundeck_db:db \
+		--link rundeckdb:db \
 		--name rundeck -h rundeck \
 		 mbopm/rundeck
 
